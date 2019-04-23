@@ -17,7 +17,8 @@ class ClickyCounter extends React.Component {
                 <h3>{this.state.number}</h3>
                 <button 
                 onClick={this._incrementNumber}
-                >Do Not Push</button>
+                >Do Not Push!</button>
+                <button onClick={this._decrementNumber}>Really, Don't!</button>
             </div>
         );
     }
@@ -25,6 +26,12 @@ class ClickyCounter extends React.Component {
     _incrementNumber = () => {
         this.setState({
             number: this.state.number + 1
+        });
+    }
+
+    _decrementNumber = () => {
+        this.setState({
+            number: this.state.number - 1
         });
     }
 }
