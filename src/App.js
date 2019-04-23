@@ -24,6 +24,7 @@ function App() {
           Whatever <br></br>
           Edit <code>src/App.js</code> and save to reload.
         </p> */}
+        <ClickyCounter startAt={300}/>
         <ClickyCounter />
         <Counter />
         {/* you can all do {} */}

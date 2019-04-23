@@ -5,7 +5,8 @@ class ClickyCounter extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            number: 0
+            // an 'or' statement instead of a turnary
+            number: props.startAt || 0 // use props.startAt if truthy, otherwise, use 0
         }
     }
 
